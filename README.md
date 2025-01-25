@@ -4,16 +4,17 @@ Welcome to Torch Learn! This project is a learning playground for PyTorch, desig
 
 ## About the Project
 
-Torch Learn provides a collection of tutorials, examples, and exercises to help me get started with PyTorch.
+Torch Learn provides implementation of tutorials on pytorch.org, and also my experiments with this library.
 
 ## Getting Started
 
 To get started with Torch Learn, clone the repository and install dependencies with poetry install.
 
 ```bash
-git clone https://github.com/yourusername/torch-learn.git
-cd torch-learn
+git clone https://github.com/poterageist/torch_learn.git
+cd torch_learn
 poetry install
+poetry run torch_learn quickstart
 ```
 
 ## Contact

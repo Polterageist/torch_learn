@@ -128,3 +128,10 @@ cython_debug/
 
 # VS Code settings
 .vscode/
+*.code-workspace
+
+# pytorch learning data 
+data/
+
+# Generated models
+models/
