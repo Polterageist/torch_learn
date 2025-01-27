@@ -6,17 +6,16 @@ authors = [
     {name = "Aleksandr Rybalka",email = "polterageist@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.11"
-dependencies = [
-    "torch (>=2.5.1,<3.0.0)",
-    "click (>=8.1.8,<9.0.0)",
-    "torchvision (>=0.20.1)"
-]
-
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+torch = { version = "2.5.1", source="torch" }
+torchvision = { version = "0.20.1", source="torch" }
+click = "^8.1.8"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.10.0"
@@ -25,3 +24,8 @@ pytest = "^8.3.4"
 
 [project.scripts]
 torch_learn = "torch_learn.main:cli"
+
+[[tool.poetry.source]]
+name = "torch"
+url = "https://download.pytorch.org/whl/cu124"
+priority = "supplemental"

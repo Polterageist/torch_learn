@@ -143,6 +143,7 @@ def quickstart():
 
     model.eval()
     X, y = test_data[0][0], test_data[0][1]
+    X = X.to(device)
     with torch.no_grad():
         pred = model(X)
         predicted, actual = classes[pred[0].argmax(0)], classes[y]
