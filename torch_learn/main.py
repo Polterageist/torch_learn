@@ -1,5 +1,5 @@
 import click
-from introduction.quickstart import quickstart
+from torch_learn.introduction.quickstart import quickstart
 
 
 @click.group()
